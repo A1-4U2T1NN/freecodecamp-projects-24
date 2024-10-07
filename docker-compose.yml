@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  freecodecampprojects24:
+    image: freecodecampprojects24
+    build:
+      context: .
+      dockerfile: ./Dockerfile
