@@ -3,21 +3,82 @@
 
     <head>
         <title>Survey Form</title>
-        <link rel="stylesheet" href="survformStyles.css">
+        <link rel="stylesheet" href="survfFormStyles.css">
     </head>
     <body>
-        <h1 id="title">Favorite Beverage Survey Form</h1>
-        <p id="description"></p>
-        <form id="survey-form">
-            <label id="name-label">Enter Name Here: <input id="name" type="text" required></label>
-            <label id="email-label">Enter Email Here: <input id="email" type="email" required></label>
-            <label id="number-label">Enter Phone Number Here:<input id="number"></label>
-            <select id="dropdown">
-                <option type="radio" name=""></option>
-                <option type="radio" name=""></option>
-            </select>
-            <textarea></textarea>
-            <label id="submit" type="radio">
+        <h1 id="title">HELP Event Vendor Survey Questions</h1>
+        <p id="description">Thank you for being a part of the HELP event! Your feedback is valuable to us, and we appreciate your time in completing this survey. Your responses will help us improve future events and provide even better support for our community.</p>
+        <div class="survey">
+            <form id="survey-form">
+                <label id="name-label">Enter First Name Here: <input id="first" type="text" required></label>
+                <label id="name-label">Enter Last Name Here: <input id="last" type="text" required></label>
+                <label id="email-label">Enter Email Here: <input id="email" type="email" required></label>
+                <label id="number-label">Enter Phone Number Here: <input id="number"></label>
+                <fieldset>
+                    <legend>How satisfied were you with the overall organization of the HELP event?</legend>
+                    <label><input id="Very Satisfied" type="radio" name="question-0" value="Very-Satisfied"> Very Satisfied</label>
+                    <label><input id="Satisfied" type="radio" name="question-0" value="Satisfied"> Satisfied</label>
+                    <label><input id="Neutral" type="radio" name="question-0" value="Neutral"> Neutral</label>
+                    <label><input id="Unsatisfied" type="radio" name="question-0" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input id="Very Unsatisfied" type="radio" name="question-0" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </fieldset>
+                <fieldset>
+                    <legend>How would you rate the communication from the event organizers before and during the event?</legend>
+                    <label><input id="Excellent" type="radio" name="question-1" value="Excellent"> Excellent</label>
+                    <label><input id="Good" type="radio" name="question-1" value="Good"> Good</label>
+                    <label><input id="Fair" type="radio" name="question-1" value="Fair"> Fair</label>
+                    <label><input id="Poor" type="radio" name="question-1" value="Poor"> Poor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>How many individuals did you engage with at the event?</legend>
+                    <label><input id="Less than 10 individuals" type="radio" name="question-2" value="10>"> Less than 10 individuals</label>
+                    <label><input id="10 - 30 individuals" type="radio" name="question-2" value="10-30"> 10 - 30 individuals</label>
+                    <label><input id="31 - 50 individuals" type="radio" name="question-2" value="31-50"> 31 - 50 individuals</label>
+                    <label><input id="More than 50 individuals" type="radio" name="question-2" value="50<"> Very More than 50 individuals</label>
+                </fieldset>
+                <label for="question-3">What types of services or resources did you provide at the event?
+                    <textarea id="question-3" name="question-3" rows="3" cols="30" placeholder="Start typing here: "></textarea>
+                </label>
+                <fieldset>
+                    <legend>Were the setup and logistics at the event location suitable for your needs</legend>
+                    <label><input id="yes" type="radio" name="question-4" value="yes"> Yes</label>
+                    <label><input id="somewhat" type="radio" name="question-4" value="somewhat"> Somewhat</label>
+                    <label><input id="no" type="radio" name="question-4" value="no"> No</label>
+                    <label>Please provide additional comments: <textarea id="Please provide additional comments: " name="question-4" rows="3" cols="30" placeholder="Start typing here: "></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Did the event meet your expectations in terms of impact and engagement with attendees?</legend>
+                    <label><input id="exceeded-expectations" type="radio" name="question-5" value="exceeded-expectations"> Exceeded expectations</label>
+                    <label><input id="met-expectations" type="radio" name="question-5" value="met-expectations"> Met expectations</label>
+                    <label><input id="somewhat-met-expectations" type="radio" name="question-5" value="somewhat-met-expectations"> Somewhat met expectations</label>
+                    <label><input id="did-not-meet-expectations" type="radio" name="question-5" value="did-not-meet-expectations"> Did not meet expectations</label>
+                </fieldset>
+                <label for="question-6">What types of services or resources did you provide at the event?
+                    <textarea id="question-6" name="question-6" rows="3" cols="30" placeholder="Start typing here: "></textarea>
+                </label>
+                <fieldset>
+                    <legend>How would you rate the communication from the event organizers before and during the event?</legend>
+                    <label><input id="very-useful" type="radio" name="question-7" value="very-useful"> Very Useful</label>
+                    <label><input id="somewhat-useful" type="radio" name="question-7" value="somewhat-useful"> Somewhat Useful</label>
+                    <label><input id="not-useful" type="radio" name="question-7" value="not-useful"> Not Useful</label>
+                    <label><input id="I-did-not-participate-in-networking" type="radio" name="question-7" value="I-did-not-participate-in-networking"> I did not participate in networking</label>
+                </fieldset>
+                <label for="question-8">What improvements would you suggest for future HELP events?
+                    <textarea id="question-8" name="question-8" rows="3" cols="30" placeholder="Start typing here: "></textarea>
+                </label>
+                <fieldset>
+                    <legend>How likely are you to participate in future HELP events as a vendor?</legend>
+                    <label><input id="very-likely" type="radio" name="question-9" value="very-satisfied"> Very Likely</label>
+                    <label><input id="likely" type="radio" name="question-9" value="likely"> Likely</label>
+                    <label><input id="neutral" type="radio" name="question-9" value="neutral"> Neutral</label>
+                    <label><input id="unlikely" type="radio" name="question-9" value="unlikely"> Unlikely</label>
+                    <label><input id="very-unlikely" type="radio" name="question-9" value="very-unlikely"> Very Unlikely</label>
+                </fieldset>
+                <label for="question-10">Any additional comments or suggestions?
+                    <textarea id="question-10" name="question-10" rows="3" cols="30" placeholder="Start typing here: "></textarea>
+                </label>
+            </div>
+            <input value="Submit" type="submit">
       </form>
     </body>
 </html>
