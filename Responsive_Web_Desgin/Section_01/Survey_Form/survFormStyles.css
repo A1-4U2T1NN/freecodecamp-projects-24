@@ -24,8 +24,11 @@ form {
 
 input[id="number"]{
     margin-bottom: 20px;
-   }
+}
 
+select[id="dropdown"]{
+    margin-bottom: 10px
+}
 fieldset {
     border: none;
     padding: 2em 0;

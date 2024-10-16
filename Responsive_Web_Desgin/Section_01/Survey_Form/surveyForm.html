@@ -9,10 +9,18 @@
         <h1 id="title">HELP Event Vendor Survey Questions</h1>
         <p id="description">Thank you for being a part of the HELP event! Your feedback is valuable to us, and we appreciate your time in completing this survey. Your responses will help us improve future events and provide even better support for our community.</p>
         <form id="survey-form">
-            <label id="name-label">Enter First Name Here: <input id="first" type="text" required></label>
-            <label id="name-label">Enter Last Name Here: <input id="last" type="text" required></label>
-            <label id="email-label">Enter Email Here: <input id="email" type="email" required></label>
-            <label id="number-label">Enter Phone Number Here: <input id="number"></label>
+            <label id="name-label">Enter Your Name Here: <input id="name" type="text" required placeholder="Start typing here: "></label>
+            <label id="email-label">Enter Your Email Here: <input id="email" type="email" required placeholder="Start typing here: "></label>
+            <label id="number-label">Enter Your Age Here (Optional): </label><input id="number" type='number' min="13" max="122" placeholder="Start typing here: ">
+            <select id="dropdown">
+                <option value="">--How Did You Hear About Us--</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="internet">The Internet</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="other-events">Events</option>
+                <option value="other">Other</option>
+            </select>
+
             
             <fieldset id="fieldset 1">
                 <legend>How satisfied were you with the overall organization of the HELP event?</legend>
@@ -85,9 +93,20 @@
                 <label class="response"><input id="unlikely" type="radio" name="question-9" value="unlikely"> Unlikely</label>
                 <label class="response"><input id="very-unlikely" type="radio" name="question-9" value="very-unlikely"> Very Unlikely</label>
             </fieldset>
+            
+            <fieldset>
+                <legend>What day of the week would a future event work for you?</legend>
+                <label class="response"><input id="Monday" type="checkbox" name="question-10" value="Monday"> Monday</label>
+                <label class="response"><input id="Tuesday" type="checkbox" name="question-10" value="Tuesday"> Tuesday</label>
+                <label class="response"><input id="Wednsday" type="checkbox" name="question-10" value="Wednsday"> Wednsday</label>
+                <label class="response"><input id="Thursday" type="checkbox" name="question-10" value="Thursday"> Thursday</label>
+                <label class="response"><input id="Friday" type="checkbox" name="question-10" value="Friday"> Friday</label>
+                <label class="response"><input id="Saturday" type="checkbox" name="question-10" value="Saturday"> Saturday</label>
+                <label class="response"><input id="Sunday" type="checkbox" name="question-10" value="Sunday"> Sunday</label>
+            </fieldset>
 
-            <label for="question-10">Any additional comments or suggestions?
-                <textarea id="question-10" name="question-10" rows="3" cols="30" placeholder="Start typing here: "></textarea>
+            <label for="question-11">Any additional comments or suggestions?
+                <textarea id="question-11" name="question-11" rows="3" cols="30" placeholder="Start typing here: "></textarea>
             </label>
             <input value="Submit" type="submit">
         </form>
